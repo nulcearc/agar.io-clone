@@ -20,7 +20,7 @@ var spin = -Math.PI;
 var enemySpin = -Math.PI;
 var mobile = false;
 var foodSides = 10;
-var virusSides = 30;
+var virusSides = 25;
 
 var debug = function(args) {
     if (console && console.log) {
@@ -176,6 +176,9 @@ visibleBorderSetting.onchange = toggleBorder;
 
 var showMassSetting = document.getElementById('showMass');
 showMassSetting.onchange = toggleMass;
+
+var darkThemeSetting = document.getElementById('darkTheme');
+darkThemeSetting.onchange = toggleDarkMode;
 
 var continuitySetting = document.getElementById('continuity');
 continuitySetting.onchange = toggleContinuity;
